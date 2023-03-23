@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview questions and Answers</title>
+</head>
+<body>
+    <h4>1. Difference between div and span?</h4>
+    <p><div> tag stands for division tag and it is block-level element means it is bound
+to take the whole width of the screen. Its default CSS “display” property is
+“display : block”.
+<span> tag is an inline element means it only takes the space that is required for
+the content.. Its default CSS “display” property is “display : inline”.
+Div is a block element and it acquires the entire width so the next element
+which will come, will always come in the next line. Whereas Span is an inline
+element, it acquires only the width which is required for the content so the next
+element will be starting from the same line only.
+</p>
+<table border="3"  width="40%" cellpadding="4">
+    <tr>
+     <td>This is block one</td>
+    </tr> 
+    <tr>
+        <td>This is block two</td>
+    </tr>
+    <table border="3"  width="40%" cellpadding="4">
+    <tr>
+        <td rowspan="2">This is inline element one</td>
+    </tr>
+    <tr>
+        <td>This is inline elemnet two</td>
+    </tr>
+</table>
+</table>
+<h4>****************************************************</h4>
+<h4>border="3"  width="40%" cellpadding="4"</h4>
+<p>In HTML, the differences between class and ID is :
+    ● One element can have more than one class i.e. class = “box box1”. On
+    the other hand, one element can have only one id i.e. id = “heading ● IDs are unique which means you can not give one id to multiple elements.
+    On the otherhand classes are not unique we can use same class on
+    multiple elements.
+    ● When we style an element using class we use class = “box” .box{}. On
+    the other hand to style an element using id we use id = “heading”
+    #heading
+    </p>
+    <h4>**************************************************</h4>
+    <h4>3. What are self-closing tags and empty elements?</h4>
+    <p>In HTML, A self-closing tag is a type of tag that need not be closed by closing
+        tag, which means there is no separate closing tag for it as </tag>.
+        Normal tags require opening and closing tags both like <div> is an opening tag
+        and </div> is a closing tag.
+        Elements that don't have any content are called empty elements.
+        <br> is an empty element without a closing tag (the <br> tag defines a line
+        break).
+        Empty elements can be "closed" in the opening tag like this: <br />.
+        Example: <img /> , <input /> , <br />, <hr />
+    </p>
+    <h4>****************************************************************</h4>
+    <h4>4. How many types of heading tags are there? How to decide which to use where?</h4>
+    <p>Heading tags are titles or subtitles that we want to display on our webpage.There are six levels of heading tags are there in HTML. These tags play animportant role in making your website SEO(search engine optimization) friendly.<h1> <h2> <h3> <h4> <h5> <h6>h1 tag you should when you want to give the main heading of the page.h2 h3 tags you should use to give the sub-headings in the page.h4 h5 h6 tags you should use to give the content.
+    As you move from h1 to h6 the importance of the heading decreases. h1 is ofhighest importance and h6 is of least importance.
+    </p>
+    <h4>******************************************</h4>
+    <h4>5. Difference between block and inline?</h4>
+    <p>Block elements acquire the entire width of the screen. Its default CSS “display”property is “display : block”.Examples of block elements are <div>, <p>, <h1>to<h6>, <table> and <form>etc.
+     Inline elements acquired only the width required for the content. Its default CSS“display” property is “display : inline”.Examples of inline elements are <a>, <span>, <img>, <input>, <label> etc.
+    </p>
+    <h4>********************************************************</h4>
+    <h4>6. Difference between <em> and <strong>?</h4>
+    <p>The <strong> and <em> tags are used for emphasizing parts of a text.The <strong> tag should be used to indicate strong importance. It makes textlook bold. i.e. TextThe <em> tag should be used to represent stress emphasis, like when you'd read
+        the emphasized text in a different tone of voice. This also makes the text lookbold, but if you are using Google dictation then it will read the text with a littleemphasis. i.e Text
+    </p>
+    <h4>***************************************</h4>
+    <h4>7. What are Attributes?</h4>
+    <p>In HTML, attributes are special words which provide additional informationabout the elements and are the modifiers of HTML elements.Attributes should be written in lowercase only as they are case sensitive. Itshould always be applied with its name and value pair.
+    It should always be applied with the start tag, we can add multiple attributes toan element by giving space between two attributes.Ex : <img src=”http://www.google.com/morning-img” alt=”image”/>
+    Here src and alt are attributes of img tag.
+    </p>
+    <h4>************************************</h4>
+    <h4>8. Difference between HTML Tags and Elements?</h4>
+    <p>HTML tags- Tags are the starting and ending part of an HTML element. Theybegin with the “<” symbol and end with “>”. Whatever written inside < and >are called tags. For instance: -- <div></div> div is a html tagHTML elements – Elements enclose the contents in between the tags. They
+    consist of some kind of structure. It generally consists of a start tag, content andend tag. For instance: -- <b>Content</b> is a html element.
+    </p>
+    <h4>************************************************</h4>
+    <h4>9. Explain <br /> tag?</h4>
+    <p>The <br> tag in HTML documents is used to create a line break in a text. It is anempty tag which means it does not need an end tag like </br>.It is generally used in poems and addresses where the division of line isnecessary.</p>
+    <h4>********************************************</h4>
+    <h1>Implimentation Questions</h1>
+    <h4>1. Write code to create an ordered list with roman numbers.</h4>
+    <p>Ordered list in html is used to create list elements which are following somespecific order. Its default type is number or “1”. Other types which it supportsare “I” , “i”, “A”, “a”. </p>
+    <h3>Code:-</h3>
+              <ol type="I">
+               <li>Apple</li>
+               <li>Orange</li>
+               <li>Banana</li>
+              </ol>
+    <h3> Output:-</h3>
+    <h3>**************************************</h3>
+    <h4>2. Write code to create an unordered list with a circle.</h4>
+    <p>Unordered list in html is used to create list elements which are random infashion. Its default type is bullet or “disc”. Other types which it supports are “circle “, “none”square”.</p>
+    <h3>Code:</h3>
+    <ul type="circle">
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        </ul>
+    <h3>Output:-</h3>
+    <h3>*****************************************</h3>
+    <h4>3. Write a code to create a link to https://www.prepbytes.com</h4>
+    <p>To create links in HTML, we use anchor tags. These tags can be used to redirectto a new HTML page and also to a web page. So in href attribute we can give the web page link or we can give the location of the html file we want to load.
+    target = “_blank” you can give when you want to open that page in a new tab.</p>
+<h3>CODE:-</h3>
+<h2>Link to go to Prepbytes</h2>
+<a href=”https://www.prepbytes.com”>Prepbytes</a>
+<a href=”https://www.prepbytes.com” target=”_blank”>Prepbytes</a>
+<h3>Out put:-</h3>
+<h4>***********************************</h4>
+<h4>4. Write a code to insert an image.</h4>
+<p>To insert an image in html, we use img tag. In this tag we have to use src(source) attribute to provide the image url. And other than that we give alt(alternate) attribute, whose value will be displayed on the screen if the image urlgiven in source is not correct.</p>
+<h3>Code:-</h3>
+<h1>Image</h1>
+<img src=”link address of the image” alt=”alternate text” />
+<h3>OutPut:-</h3>
+<h4>**************************************************</h4>
+<h4>5. Write a HTML code to create 2*2 : Table column should be name and salary, provide two entries for this.</h4>
+<p>To insert a table in HTML , we use table tag. Inside table we have multiple tags which are having specific usage : tr (table row) : used to create table row th (table head) : used to create the heading of the table td (table data) : used to enter any data in the table</p>
+<h3>Code:-</h3>
+<table border="1">
+    <tr>
+    <th>Name</th>
+    <td>John</td>
+    <td>David</td>
+    </tr>
+    <tr>
+    <th>Salary</th>
+    <td>30K</td>
+    <td>40K</td>
+    </tr>
+    </table>
+<h4>Output:-</h4>
+<h4>*****************************************</h4>
+<h4>6. Create a form that contains input fields like name, age, email and contact and you should be able to see the details given by user in the page url after submitting the form.</h4>
+<p>Whenever you are creating in HTML forms, you should create an input field inside that we must add attributes like type, name, id and value. So that when you are submitting the form you are able to see the output given by the user in the url.</p>
+ <h3>Code:-</h3>
+ <h3>Form</h3>
+<form action="#">
+<label for="name">Name:</label>
+<input
+type="text"
+name="name"
+id="name" value="" placeholder="enter your
+<label for="email">Email:</label>
+<input type="email" name="email" id="name" value="" placeholder="enter your
+email...">
+<label for="age">Age: </label>
+<input type="number" name="age" id="name" value="" placeholder="enter your
+age...">
+<label for="contact">Contact:</label>
+<input type="tel" name="contact" id="contact" value="" placeholder="enter your <input type="submit" name="submit" value="submit">
+</form>
+<h4>Output:-</h4>
+<h4>***************************************</h4>
+<h4>7. Create a table and explain how to achieve colspan?</h4>
+<p>Colspan is used to combine two columns together.</p>
+<h4>Code:-</h4>
+<table border="1">
+    <tr>
+    <th>Name</th> <th colspan="2">Designation</th>
+    </tr>
+    <tr>
+    <td>Rohan</td>
+    <td>Front-end Dev</td>
+    <td>Backend Dev</td>
+    </tr>
+    <tr>
+    <td>Vihan</td>
+    <td>Front-end Dev</td>
+    <td>Backend Dev</td>
+    </tr>
+    </table>
+    <h4>**************************************</h4>
+    <h4>8. Create a radio button (MERN, MEAN: course) and checkbox(HTML,CSS, React, Node: technology) and explain the difference between these two? </h4>
+    <p>Note : In radio and checkbox, you should always remember two things. Firstly, you should write the input tag first and then the label tag. Secondly, all the radio buttons which fall under the same category should have the same value of name attribute and similar with the checkbox. </p>
+    <h4>Code:-</h4>
+    <h3>Radio button</h3>
+<input type="radio" value="MERN" name="course" id="course">
+<label for="course">MERN</label>
+<input type="radio" value="MEAN" name="course" id="course">
+label for="course">MEAN</label>
+<h3>Checkbox</h3>
+<input type="checkbox" value="HTML" name="technology-1" id="technology">
+<label for="technology">HTML</label>
+<input type="checkbox" value="CSS" name="technology-2" id="technology">
+<label for="technology">CSS</label>
+<input type="checkbox" value="React" name="technology-3" id="technology">
+<label for="technology">React</label>
+<input type="checkbox" value="Node" name="technology-4" id="technology">
+<label for="">Node</label>
+<h4>Output:-</h4>
+<table border="2" width="100%" cellpadding="5">
+<tr>
+    <th>Radio</th>
+    <th>Check Box</th>
+</tr>
+<tr>
+    <td>It is used when only one option is to be selected out of several available options.</td>
+    <td> Check box allows one or many otions to be selected.</td>
+</tr>
+<tr>
+    <td>Radio button is presented as a small circle on the screen.</td>
+    <td>Checkbox is presented as a small sqaure box on the screen.</td>
+</tr>
+<tr>
+    <td>It is used when you want to limit the user's choice to just one option from the range provided.</td>
+    <td>It is used when you want to allow users to select multiple options.</td>
+</tr>
+<tr>
+    <td> In the radio button we have to keep the value of the name attribute same.</td>
+    <td> In checkbox it is not compulsory to leep the value the vlaue of the name attribute same, but good practice is to keep it same for every checkbox.</td>
+</tr>
+</table>
+<h4>*******************************************************************</h4>
+</body>
+</html>
